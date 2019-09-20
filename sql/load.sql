@@ -26,6 +26,6 @@ CREATE TABLE tfidf (
 	PRIMARY KEY(song_id, token)
 );
 
-\copy artist FROM '/Users/mcirigna/Desktop/artist.csv' DELIMITER ',' QUOTE '"' CSV;
-\copy song   FROM '/Users/mcirigna/Desktop/song.csv'   DELIMITER ',' QUOTE '"' CSV;
-\copy token  FROM '/Users/mcirigna/Desktop/token.csv'  DELIMITER ',' QUOTE '"' CSV;
+\copy artist FROM '../data/artist.csv' DELIMITER ',' QUOTE '"' CSV;
+\copy song   FROM './data/song.csv'   DELIMITER ',' QUOTE '"' CSV;
+\copy token  FROM './data/token.csv'  DELIMITER ',' QUOTE '"' CSV;
